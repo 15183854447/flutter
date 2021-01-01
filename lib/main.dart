@@ -20,9 +20,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Demo', //应用名称
         home: Tabs(),
-        // theme: ThemeData(
-        //     //主体颜色配置
-        //     ),
+        theme: ThemeData(
+          //主体颜色配置
+          platform: TargetPlatform.iOS,
+        ),
         // initialRoute: '', //默认展示的路由
         onGenerateRoute: onGenerateRoute, //命名路由
         debugShowCheckedModeBanner: false, //手机右上脚的debug文件是否展示
