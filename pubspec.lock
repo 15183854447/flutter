@@ -142,6 +142,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.6.4"
+  pda_scanner:
+    dependency: "direct main"
+    description:
+      name: pda_scanner
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.2.9"
   petitparser:
     dependency: transitive
     description:
@@ -233,4 +240,4 @@ packages:
     version: "3.6.1"
 sdks:
   dart: ">=2.7.0 <3.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=1.16.0 <2.0.0"

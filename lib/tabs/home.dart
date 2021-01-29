@@ -7,11 +7,11 @@ import '../request/request.dart';
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
 
-  getList() async {
+  getList(page) async {
     Map result = await HttpUtils.request('/index/getGoodsList/:page',
         method: HttpUtils.GET,
         data: {
-          'page': 1,
+          'page': page,
         });
 
     print(result);
@@ -34,8 +34,7 @@ class Home extends StatelessWidget {
         RaisedButton(
           onPressed: () {
             // 更改全局状态的值
-
-            print(this.getList());
+            print(this.getList(counter.count));
             counter.increment(12312);
           },
           child: Text('按钮2'),

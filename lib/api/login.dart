@@ -5,11 +5,9 @@
 // // 返回的结果直接就是 json 格式
 // // 要使用 await，必须在方法名后面加上 async
 // _handleGetShelf() async {
-//    await HttpUtils.request('/index/getGoodsList',
-//       method: HttpUtils.GET,
-//       data: {
-//         'page': 1,
-//       });
+//   await HttpUtils.request('/index/getGoodsList', method: HttpUtils.GET, data: {
+//     'page': 1,
+//   });
 // }
 
 // // POST 请求
