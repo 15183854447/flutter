@@ -57,6 +57,11 @@ class Category extends StatelessWidget {
               print('底部弹框');
             },
           ),
+          SizedBox(width: 20),
+
+          // RaisedButton(
+          //   child: Text('文本组件'),
+          // )
         ],
       ),
     );

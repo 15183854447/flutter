@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../pages/search.dart';
+import '../pages/Text/text.dart';
 
 //配置路由
-final routes = {'/search': (context) => Search()};
-
+final routes = {
+  '/search': (context) => Search(),
+  '/text': (context) => Textdsc(),
+};
 //固定写法
 var onGenerateRoute = (RouteSettings settings) {
   final String name = settings.name;
