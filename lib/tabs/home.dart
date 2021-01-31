@@ -22,8 +22,8 @@ class Home extends StatelessWidget {
     // 获取 CounterNotifier 数据 （最简单的方式）
     final counter = Provider.of<CounterNotifier>(context);
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.center,
+      // crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         RaisedButton(
           onPressed: () {
@@ -41,6 +41,18 @@ class Home extends StatelessWidget {
         ),
         Text('${counter.count}'),
         Text('Device widthdp'),
+        OutlineButton(
+          child: Text('Form表单'),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/button');
+          },
+        ),
+        FlatButton(
+            color: Colors.red,
+            onPressed: () {
+              Navigator.of(context).pushNamed('/radio');
+            },
+            child: Text('单选框'))
       ],
     );
   }

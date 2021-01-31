@@ -7,7 +7,7 @@ class Textdsc extends StatelessWidget {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('搜索'),
+          title: Text('文本'),
         ),
         body: Column(
           children: <Widget>[
