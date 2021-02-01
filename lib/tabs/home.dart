@@ -42,7 +42,7 @@ class Home extends StatelessWidget {
         Text('${counter.count}'),
         Text('Device widthdp'),
         OutlineButton(
-          child: Text('Form表单'),
+          child: Text('按钮'),
           onPressed: () {
             Navigator.of(context).pushNamed('/button');
           },
@@ -52,7 +52,13 @@ class Home extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pushNamed('/radio');
             },
-            child: Text('单选框'))
+            child: Text('单选框')),
+        OutlineButton(
+            color: Colors.red,
+            onPressed: () {
+              Navigator.of(context).pushNamed('/checkbox');
+            },
+            child: Text('复选框'))
       ],
     );
   }

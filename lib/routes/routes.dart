@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../pages/search.dart';
@@ -9,6 +8,7 @@ import '../pages/Text/ensample.dart';
 
 import '../pages/Form/button.dart';
 import '../pages/Form/radio.dart';
+import '../pages/Form/checkbox.dart';
 
 //配置路由
 final routes = {
@@ -18,7 +18,8 @@ final routes = {
   '/input': (context) => Input(),
   '/ensample': (context) => Ensample(),
   '/button': (context) => Button(),
-  '/radio': (context) => Radios()
+  '/radio': (context) => Radios(),
+  '/checkbox': (context) => CheckBox()
 };
 //固定写法
 var onGenerateRoute = (RouteSettings settings) {
